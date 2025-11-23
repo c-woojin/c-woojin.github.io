@@ -1,13 +1,27 @@
-collections:
-  authors:
-    output: true
+# Site settings
+title: Your Blog Title
+description: A minimal and sleek personal blog
+author: Your Name
+email: your.email@example.com
+baseurl: ""
+url: ""
 
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Pagination
+paginate: 10
+paginate_path: "/page/:num/"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Defaults
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
   - scope:
       path: ""
       type: "posts"
@@ -17,3 +31,12 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
