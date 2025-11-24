@@ -43,17 +43,6 @@ body {
     border-bottom: 1px solid var(--color-border);
 }
 
-.site-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.site-title a {
-    color: var(--color-accent);
-    text-decoration: none;
-}
-
 .site-nav {
     display: flex;
     gap: 20px;
@@ -273,6 +262,37 @@ body {
 
 .post-navigation .next {
     text-align: right;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.pagination a:hover {
+    color: var(--color-text-light);
+}
+
+.pagination .disabled {
+    color: var(--color-border);
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
 }
 
 /* Footer */

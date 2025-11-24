@@ -1,12 +1,13 @@
 ---
 layout: default
 title: Home
+paginate: true
 ---
 
 <div class="home">
-    {% if site.posts.size > 0 %}
+    {% if paginator.posts.size > 0 %}
     <ul class="post-list">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
         <li class="post-list-item">
             <h2 class="post-list-title">
                 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -20,6 +21,24 @@ title: Home
         </li>
         {% endfor %}
     </ul>
+
+    {% if paginator.total_pages > 1 %}
+    <nav class="pagination">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-prev">← Previous</a>
+        {% else %}
+        <span class="pagination-prev disabled">← Previous</span>
+        {% endif %}
+
+        <span class="pagination-info">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-next">Next →</a>
+        {% else %}
+        <span class="pagination-next disabled">Next →</span>
+        {% endif %}
+    </nav>
+    {% endif %}
     {% else %}
     <p>No posts yet.</p>
     {% endif %}
