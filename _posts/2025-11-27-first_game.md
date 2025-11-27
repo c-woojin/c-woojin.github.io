@@ -5,8 +5,6 @@ date: 2025-11-27 00:00:00 +0900
 tags: [game]
 ---
 
-# My First Unity Game: Rocket 🚀
-
 I recently finished my first Unity game — a tiny 1-minute WebGL project called Rocket.
 It’s simple, built while following a Udemy course, and definitely not a “big” game by any stretch.
 But it is the first game I actually finished, shared, and received real feedback on.
