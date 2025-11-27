@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rocket: My First Tiny Unity Game, Built from a Udemy Course"
+title: "My First Unity Game: Rocket 🚀"
 date: 2025-11-27 00:00:00 +0900
 tags: [game]
 ---
