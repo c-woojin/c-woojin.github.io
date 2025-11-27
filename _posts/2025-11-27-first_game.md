@@ -27,11 +27,11 @@ The entire project comes from the Udemy course:
 [Complete C# Unity 2D Game Development (Updated To Unity 6)](https://www.udemy.com/share/101Wjs3@c5ykY3y-gFhfyTz4PE3H17salOpl1sb0pi162VtWKndkUxYuiZtgF5mK8-Rkb7sSQg==/)
 
 Following the course gave me a guided way into Unity’s ecosystem:
-	•	Component-based design
-	•	Rigidbody and collisions
-	•	Basic physics interactions
-	•	Update vs FixedUpdate
-	•	Debugging through the Inspector
+- Component-based design
+- Rigidbody and collisions
+- Basic physics interactions
+- Update vs FixedUpdate
+- Debugging through the Inspector
 
 Nothing fancy — but for a beginner, every small concept felt new and occasionally overwhelming.
 
@@ -42,9 +42,9 @@ While it started as simple “follow along,” at some point it shifted into und
 Designing even a tiny level was way more difficult than I expected.
 
 Moving an obstacle by just 1 meter could make the game either:
-	•	too easy,
-	•	impossible, or
-	•	mildly infuriating (which my friends kindly pointed out).
+- too easy,
+- impossible, or
+- mildly infuriating (which my mom kindly pointed out).
 
 I realized level design isn’t about placing objects — it’s about shaping the player experience.
 That was a meaningful lesson tucked inside a tiny project.
@@ -52,10 +52,10 @@ That was a meaningful lesson tucked inside a tiny project.
 ## Challenge #2 — Getting Comfortable with Unity’s Framework
 
 Unity’s ecosystem was a lot to take in at first:
-	•	Physics values behaving unexpectedly
-	•	Components interacting in non-obvious ways
-	•	Inspector tweaks drastically changing gameplay
-	•	Confusion between script execution orders
+- Physics values behaving unexpectedly
+- Components interacting in non-obvious ways
+- Inspector tweaks drastically changing gameplay
+- Confusion between script execution orders
 
 Even for a small game, Unity forces you to think systematically.
 It was frustrating at times, but also the exact kind of friction that leads to actual learning.
@@ -65,9 +65,9 @@ It was frustrating at times, but also the exact kind of friction that leads to a
 The most memorable part of this project wasn’t the development itself — it was sharing the game with my mom and my younger brother.
 
 Their reactions were simple but surprisingly meaningful:
-	•	“You made this? That’s impressive.”
-	•	“Why is landing so difficult?”
-	•	“This game is kind of annoying… but in a fun way.”
+- “You made this? That’s impressive.”
+- “Why is landing so difficult?”
+- “This game is kind of annoying… but in a fun way.”
 
 It didn’t matter that the game was tiny or built from a course.
 Watching my own family play something I created — and react to it in real time — made the whole thing feel real.
@@ -79,10 +79,10 @@ That was enough.
 ## What This Small Project Left Me With
 
 Rocket is a tiny game, but it left me with tangible lessons:
-	•	Finishing something, even a small project, builds confidence
-	•	Implementation teaches more than theory ever can
-	•	Sharing your work is part of the creative process
-	•	Small, repeatable completions accelerate growth much faster than big, unfinished ideas
+- Finishing something, even a small project, builds confidence
+- Implementation teaches more than theory ever can
+- Sharing your work is part of the creative process
+- Small, repeatable completions accelerate growth much faster than big, unfinished ideas
 
 This project chipped away at the fear of “starting game development.”
 Next time, I want to build something slightly more original — still small, still simple, but fully mine.
