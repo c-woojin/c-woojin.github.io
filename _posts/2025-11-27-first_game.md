@@ -22,7 +22,7 @@ It’s minimal, a bit clumsy, occasionally frustrating (by design, I guess), and
 ## Built From a Udemy Course
 
 The entire project comes from the Udemy course:
-[Complete C# Unity 2D Game Development (Updated To Unity 6)](https://www.udemy.com/share/101Wjs3@c5ykY3y-gFhfyTz4PE3H17salOpl1sb0pi162VtWKndkUxYuiZtgF5mK8-Rkb7sSQg==/)
+[Complete C# Unity 3D Game Development in Unity 6](https://www.udemy.com/share/101Wey3@v4D3b_QyPebvzaTKREJrEkOKJX1_vETG6nAWnEtuhwXLegzkz1zQoarYqf3I9PioUg==/)
 
 Following the course gave me a guided way into Unity’s ecosystem:
 - Component-based design
