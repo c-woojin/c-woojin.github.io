@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="category-page">
+    <header class="category-header">
+        <h1 class="category-title">{{ page.title }}</h1>
+        {% if page.description %}
+        <p class="category-description">{{ page.description }}</p>
+        {% endif %}
+    </header>
+
+    {% assign category_posts = site.posts | where_exp: "post", "post.categories contains page.category" %}
+
+    {% if category_posts.size > 0 %}
+    <ul class="post-list">
+        {% for post in category_posts %}
+        <li class="post-list-item">
+            <h2 class="post-list-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+            <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%B %d, %Y" }}
+            </time>
+            {% if post.excerpt %}
+            <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="no-posts">No posts in this category yet.</p>
+    {% endif %}
+</div>

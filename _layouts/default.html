@@ -26,14 +26,31 @@
     {% seo %}
 </head>
 <body>
-    <div class="container">
-        <header class="site-header">
+    <header class="site-header">
+        <div class="site-header-inner">
             <nav class="site-nav">
-                <a href="{{ '/' | relative_url }}">Home</a>
-                <a href="{{ '/about' | relative_url }}">About</a>
+                <div class="nav-left">
+                    <a href="{{ '/' | relative_url }}">Home</a>
+                    <div class="nav-dropdown">
+                        <span class="nav-dropdown-toggle">Categories</span>
+                        <div class="nav-dropdown-menu">
+                            <div class="nav-dropdown-menu-inner">
+                                <a href="{{ '/categories/life/' | relative_url }}">Life</a>
+                                <a href="{{ '/categories/dev/' | relative_url }}">Dev</a>
+                                <a href="{{ '/categories/books/' | relative_url }}">Books</a>
+                                <a href="{{ '/categories/travel/' | relative_url }}">Travel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <a href="{{ '/about' | relative_url }}">About</a>
+                </div>
             </nav>
-        </header>
+        </div>
+    </header>
 
+    <div class="container">
         <main class="content">
             {{ content }}
         </main>

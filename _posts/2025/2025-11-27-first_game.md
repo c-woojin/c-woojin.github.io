@@ -2,6 +2,7 @@
 layout: post
 title: "My First Unity Game: Rocket 🚀"
 date: 2025-11-27 00:00:00 +0900
+categories: [dev]
 tags: [game]
 ---
 
