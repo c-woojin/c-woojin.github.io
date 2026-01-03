@@ -90,6 +90,13 @@ When modifying layouts or creating new posts:
 - Keep post titles concise and descriptive
 - Use appropriate categories and tags for organization
 
+## Responsive Design
+
+When modifying CSS or layouts:
+- Always consider both desktop and mobile views
+- The site uses a fixed header navigation - ensure `padding-top` is set in both base styles and responsive media queries to prevent content from being hidden behind the header
+- Test responsive breakpoints (max-width: 768px) when making layout changes
+
 ## Deployment
 
 This blog appears to be a GitHub Pages site (c-woojin.github.io). Changes to the `main` branch will automatically deploy to GitHub Pages.

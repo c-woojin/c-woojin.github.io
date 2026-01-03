@@ -447,10 +447,7 @@ body {
 @media (max-width: 768px) {
     .container {
         padding: 30px 16px;
-    }
-
-    .site-header {
-        margin-bottom: 40px;
+        padding-top: 70px;
     }
 
     .post-title {
