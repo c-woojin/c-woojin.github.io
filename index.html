@@ -12,9 +12,18 @@ paginate: true
             <h2 class="post-list-title">
                 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </h2>
-            <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">
-                {{ post.date | date: "%B %d, %Y" }}
-            </time>
+            <div class="post-list-meta">
+                <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">
+                    {{ post.date | date: "%B %d, %Y" }}
+                </time>
+                {% if post.categories.size > 0 %}
+                <span class="post-list-categories">
+                    {% for category in post.categories %}
+                    <a href="{{ '/categories/' | append: category | append: '/' | relative_url }}" class="post-category">{{ category }}</a>
+                    {% endfor %}
+                </span>
+                {% endif %}
+            </div>
             {% if post.excerpt %}
             <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
             {% endif %}

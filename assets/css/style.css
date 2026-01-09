@@ -180,11 +180,39 @@ body {
     color: var(--color-text-light);
 }
 
+.post-list-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
 .post-list-date {
-    display: block;
     font-size: 0.875rem;
     color: var(--color-text-light);
-    margin-bottom: 12px;
+}
+
+.post-list-categories {
+    display: flex;
+    gap: 6px;
+}
+
+.post-list-categories .post-category {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: var(--color-accent);
+    color: #fff;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.post-list-categories .post-category:hover {
+    background-color: var(--color-text-light);
 }
 
 .post-list-excerpt {
