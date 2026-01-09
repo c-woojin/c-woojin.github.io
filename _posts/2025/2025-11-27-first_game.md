@@ -18,7 +18,7 @@ This post is a short and honest retrospective on that experience.
 Rocket is a simple 2.5D mini-game made with 3D assets, focused on balancing thrust and gravity to reach the landing zone.
 
 It’s minimal, a bit clumsy, occasionally frustrating (by design, I guess), and surprisingly fun to watch others attempt.
-![rocket screenshot](/assets/images/posts/2025-11-27-first_game/rocket.png)
+![rocket screenshot](/assets/images/posts/2025/2025-11-27-first_game/rocket.png)
 
 ## Built From a Udemy Course
 
