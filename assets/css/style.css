@@ -443,6 +443,13 @@ body {
     color: var(--color-text-light);
 }
 
+/* Visitor Counter */
+.visitor-count {
+    margin-bottom: 12px;
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .container {

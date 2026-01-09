@@ -55,8 +55,32 @@
         </main>
 
         <footer class="site-footer">
+            <div class="visitor-count">
+                <span id="goatcounter-visitors"></span>
+            </div>
             <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. All rights reserved.</p>
         </footer>
     </div>
+
+    {% if site.goatcounter.code %}
+    <!-- GoatCounter -->
+    <script data-goatcounter="https://{{ site.goatcounter.code }}.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+    <script>
+        // 방문자 수 표시
+        window.addEventListener('load', function() {
+            var r = new XMLHttpRequest();
+            r.addEventListener('load', function() {
+                var data = JSON.parse(this.responseText);
+                var el = document.getElementById('goatcounter-visitors');
+                if (el && data.count) {
+                    el.textContent = 'Total visitors: ' + data.count.toLocaleString();
+                }
+            });
+            r.open('GET', 'https://{{ site.goatcounter.code }}.goatcounter.com/counter/' + encodeURIComponent(location.pathname) + '.json');
+            r.send();
+        });
+    </script>
+    {% endif %}
 </body>
 </html>

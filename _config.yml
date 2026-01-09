@@ -31,6 +31,10 @@ defaults:
     values:
       layout: "default"
 
+# GoatCounter Analytics
+goatcounter:
+  code: "cwoojin217"  # 여기에 GoatCounter 사이트 코드 입력 (예: ythony)
+
 # Exclude from processing
 exclude:
   - Gemfile
